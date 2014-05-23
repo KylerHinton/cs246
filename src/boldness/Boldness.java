@@ -73,11 +73,11 @@ public class Boldness extends Application {
                 Button start = new Button("Start");
                 //HBox hbBtn = new HBox(10);
                 grid.add(start, 0,13);
-                
+                grid.setHalignment(start, HPos.CENTER);
                 Button stop = new Button("Stop");
                 //HBox sBtn = new HBox(10);
                 grid.add(stop,2,13);
-                
+                grid.setHalignment(stop, HPos.CENTER);
                 stop.setOnAction(new EventHandler<ActionEvent>(){
                    @Override
                    public void handle(ActionEvent event){ 
