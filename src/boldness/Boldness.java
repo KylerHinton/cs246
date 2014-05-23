@@ -32,7 +32,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Jared
+ * @author Kyler
  */
 public class Boldness extends Application {
     
