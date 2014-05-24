@@ -1,0 +1,26 @@
+import com.sun.javaws.Main;
+import static java.awt.GridBagConstraints.BOTH;
+import static sun.font.GlyphLayout.done;
+        
+/**
+ *
+ * @author kyler_000
+ */
+public class Tester {
+    public static void main(String[] args) throws Exception {
+    Runnable countDown = newCountDown();
+    countDown.run();
+
+    //Thread myThread = new Thread(countDown);
+    //thread.start();
+    myThread.start();
+    for (int i = 0; i <= 10000; i++) {
+        system.out.println(i);
+        Thread.sleep(1000);
+    }
+    // wait until cd is done
+    System.out.println(“Main is done”)
+    myThread.join();
+    System.out.println(“BOTH DONE”);
+
+}
