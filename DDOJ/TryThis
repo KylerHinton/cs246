@@ -1,0 +1,29 @@
+ try{
+         while(BoldnessExp.shouldBeRunning()){
+         
+         Platform.runLater(new Runnable() {
+	@Override
+	public void run() {
+		final Circle circle = new Circle(radius, Color.RED); 
+
+circle.setOnMouseEntered(new EventHandler<MouseEvent>() {
+    public void handle(MouseEvent me) {
+        System.out.println("Mouse entered"); 
+    }
+});
+
+circle.setOnMouseExited(new EventHandler<MouseEvent>() {
+    public void handle(MouseEvent me) {
+        System.out.println("Mouse exited");
+    }
+});
+
+circle.setOnMousePressed(new EventHandler<MouseEvent>() {
+    public void handle(MouseEvent me) {
+        System.out.println("Mouse pressed");
+    }
+            }
+        });     
+     Thread.sleep(1500);
+         }
+    }catch (Exception e){
